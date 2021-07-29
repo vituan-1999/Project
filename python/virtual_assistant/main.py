@@ -47,13 +47,15 @@ def welcome():
     speak("How can I help you")
 
 
-def again(query):
+def again():
     import time
     time.sleep(3)
     speak("Do you want to continue sir ?")
     query = command().lower()
     if not "no" in query:
         speak("what else can i do for you sir")
+        query = command().lower()
+    return query
 
 
 def command():
@@ -72,8 +74,8 @@ def command():
 
 if __name__ == "__main__":
     welcome()
-    while True:
-        query = command().lower()                               # convert all command in lower
+    query = command().lower()                               # convert all command in lower
+    while True:        
         if "google" in query:                                   # search google
             speak("What should I search sir")
             search = command().lower()
@@ -94,4 +96,4 @@ if __name__ == "__main__":
         elif "quit" in query or "no" in query:
             speak(f"{virtual_assistant} will be stop. Goodbye sir")
             quit()
-        again(query)
+        query = again()
