@@ -61,7 +61,7 @@ def again():
 def command():
     c = sr.Recognizer()                 # nhan dang giong noi
     with sr.Microphone() as source:     # source from microphone
-        c.pause_threshold = 1           # wait 2s to recive command
+        c.pause_threshold = 2           # wait 2s to recive command
         audio = c.listen(source)
     try:
         query = c.recognize_google(audio, language = "en")    # command, nhan dien = google
