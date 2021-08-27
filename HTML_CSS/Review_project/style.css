@@ -1,0 +1,57 @@
+/*First Web Project of Tuan Vy*/
+html{
+    background-image: url("water.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background: linear-gradient(to right,#f5f118f1,#0004fa8c);
+    height: 80px;
+}
+
+#left-nav{
+    float: left;   /* push to the left of page */
+    margin-left: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgb(255, 0, 128);
+}
+
+#right-nav{
+    float: right;   /* push to the right of page */
+    margin-right: 20px;    
+    font-size: 18px;
+}
+
+#right-nav li{
+    display: inline-block;  /* all text in a line */
+    margin: 15px;
+}
+
+a{
+    /* for right-nav text (text inside <a> in html) */
+    color: rgb(251, 255, 0);
+    font-family: sans-serif;
+}
+
+ul li{
+    list-style: none;   /* delete the dot in each list */
+}
+
+footer{
+    clear: both;    /*  separate header and footer */
+    position: absolute;    /* push to the bottom of page */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    height: 20px;   
+}
