@@ -1,4 +1,6 @@
 /*First Web Project of Tuan Vy*/
+
+/**************Webpage style*****************************************/
 html{
     background-image: url("water.gif");
     background-repeat: no-repeat;
@@ -11,6 +13,7 @@ body{
     padding: 0px;
 }
 
+/**************Header - Footer style*********************************/
 header{
     background: linear-gradient(to right,#f5f118f1,#0004fa8c);
     height: 80px;
@@ -55,3 +58,5 @@ footer{
     color: white;
     height: 20px;   
 }
+
+/**************Section style*****************************************/
