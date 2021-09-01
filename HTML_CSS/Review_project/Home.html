@@ -1,38 +1,74 @@
-<!--First Web Project of Tuan Vy-->
+<!--First Web Project of Tuan Vy & Anh Khoa-->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Review blog</title>
-        <meta charset="UTF-8">
-        <meta name="keyword" content="review anime, review music, anime, music">
-        <meta name="description" content="Review anime and music webpage">
-        <meta name="author" content="Tuan vy">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!--header & footer-->
-        <header>
-            <nav id="right-nav"> 
+
+<head>
+    <title>Review WIBU blog</title>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="review anime, review music, anime, music">
+    <meta name="description" content="Review anime and music webpage">
+    <meta name="author" content="Tuan vy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--header & footer-->
+    <header>
+        <nav id="right-nav">
             <!--<nav>: the dieu huong-->
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="pages/About_me.html">Anime</a></li>
-                    <li><a href="pages/Music.html">Music</a></li>
-                    <li><a href="pages/About_me.html">About me</a></li>
-                </ul>
-            </nav>
-            <nav id="left-nav">
-                <h1>Home</h1>
-            </nav>
-        </header>
-        <footer>
-            &copy; 2021 by Tuan Vy :) 
-        </footer>
-        
-        <!--Content-->
-    </body>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="pages/About_me.html">Anime</a></li>
+                <li><a href="pages/Music.html">Music</a></li>
+                <li><a href="pages/About_me.html">About us</a></li>
+            </ul>
+        </nav>
+        <nav id="left-nav">
+            <h1>Home</h1>
+        </nav>
+        <div id="intro">
+            You come here to chill <br/> We bring you wibu
+        </div>
+
+        <div id="user">
+            <p>First time you are here? Let's chill!</p>
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">You're from?</label>
+
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="china">China</option>
+                    <option value="japan">Japan</option>
+                    <option value="korea">Korea</option>
+                    <option value="usa">USA</option>
+                    <option value="vietnam">Vietnam</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="front">
+            <img src="wibu_wallpaper.jpg" width="500" height="500"></img>
+        </div>
+
+    </header>
+    </header>
+    <footer>
+        &copy; 2021 by Tuan Vy :)
+    </footer>
+
+    <!--Content-->
+</body>
+
 </html>
