@@ -1,0 +1,7 @@
+Install pip:
+	sudo apt install python3.7-pip
+Upgrade pip:
+	python3 -m pip install --user --upgrade pip
+Install package:
+	python3.7 -m pip install numpy==version
+
